@@ -13,13 +13,5 @@ class Transfer
    self.sender.valid? && self.receiver.valid? ? true : false
   end
   
-  def execute_transaction
-      def reverse_transfer
-    if @status == "complete"
-      @sender.balance += @amount
-      @receiver.balance -= @amount
-      @status = "reversed"
-    end
-  end
-  end
+  
 end
